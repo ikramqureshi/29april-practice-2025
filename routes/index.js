@@ -1,6 +1,6 @@
 const express=require('express')
 const router=express.Router();
-const chaiRouter=require('./chaiRouter')
+const beverageRouter=require('./chaiRouter')
 const dessertRouter=require('./dessertRouter')
 const mainCourseRouter=require('./mainCourseRouter')
 const starterRouter=require('./starterRouter')
@@ -8,7 +8,7 @@ const starterRouter=require('./starterRouter')
 
 
 
-router.use('/chai',chaiRouter)
+router.use('/beverage',beverageRouter)
 router.use('/dessert',dessertRouter)
 
 router.use('/main-course',mainCourseRouter)

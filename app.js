@@ -2,7 +2,9 @@ const express=require('express')
 const app=express();
 
 const routes=require('./routes/index');
-const { get } = require('http');
+require('./database/models/index')
+
+app.use(express.json())
 app.use('/',routes)
 
 app.listen(3000,()=>{console.log('listening on port 3000')})

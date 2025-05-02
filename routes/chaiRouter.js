@@ -1,8 +1,9 @@
 const express=require('express')
 const router=express.Router();
-const chaiController=require('../controllers/chaiController')
+const beverageController=require('../controllers/chaiController')
 
-router.get('/',chaiController.getChai)
+router.get('/',beverageController.getBeverages)
+router.post('/',beverageController.postBeverage)
 
 module.exports=router;
 
